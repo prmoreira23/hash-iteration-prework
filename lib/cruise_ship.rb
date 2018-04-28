@@ -8,8 +8,8 @@ suite_e: "Crumpet the Elf"
 
 def select_winner(passengers)
   # add the code snippet here!
-  passenger.each do |key, value|
-      if key == :suite_a && value.start_with?("A")
+  passenger.each do |suite, passenger|
+      if suite == :suite_a && passenger.start_with?("A")
           return value
       end
   end
